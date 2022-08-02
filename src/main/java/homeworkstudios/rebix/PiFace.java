@@ -6,11 +6,11 @@ public class PiFace {
 
     }
 
-    public void establishNewConnection() {
-
+    public static void initNewClient(String ip, String password, String name) {
+        ClientManager.initNewClient(ip, password, name);
     }
 
-    public void connect() {
+    public static void init() {
 
     }
 }
