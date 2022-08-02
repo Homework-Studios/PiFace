@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54975154-04fc-4c56-b6f8-b4a66b69dd9a" name="Changes" comment="added Graph how the system is going to work">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sshd_sshd_common_2_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sshd_sshd_core_2_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/PiFace.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/commandArray" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/ClientManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PiFace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PiFace.iml" afterDir="false" />
+    <list default="true" id="54975154-04fc-4c56-b6f8-b4a66b69dd9a" name="Changes" comment="added ssh acces to py&#10;commandArray / PiFace.py WIP">
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/PiFace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/PiFace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/commandArray" beforeDir="false" afterPath="$PROJECT_DIR$/python/commandArray" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/ClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/ClientManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,23 +43,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Project.color": "2a3e08",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Project.color&quot;: &quot;2a3e08&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="PiFace" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
@@ -103,7 +95,9 @@
       <workItem from="1659203444415" duration="99000" />
       <workItem from="1659203570409" duration="656000" />
       <workItem from="1659307473863" duration="64000" />
-      <workItem from="1659464981445" duration="2229000" />
+      <workItem from="1659464981445" duration="2690000" />
+      <workItem from="1659468634304" duration="2000" />
+      <workItem from="1659468758149" duration="56000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1656106603012</created>
@@ -119,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659307525345</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added ssh acces to py&#10;commandArray / PiFace.py WIP">
+      <created>1659468312685</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659468312685</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +140,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="added Graph how the system is going to work" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Graph how the system is going to work" />
+    <MESSAGE value="added test python file" />
+    <MESSAGE value="added ssh acces to py&#10;commandArray / PiFace.py WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ssh acces to py&#10;commandArray / PiFace.py WIP" />
   </component>
 </project>

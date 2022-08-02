@@ -17,7 +17,8 @@ public class ClientManager {
 
     public static void initNewClient(String ip, String password, String name) {
 
-        String[] commandArray = new String[]{""};
+
+        String[] commandArray = utils.convertURLToList("https://github.com/Homework-Studios/PiFace/blob/main/python/commandArray").toArray(new String[0]);
 
         SshClient client = SshClient.setUpDefaultClient();
         client.start();
