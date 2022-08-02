@@ -1,3 +1,2 @@
 wget https://raw.githubusercontent.com/Homework-Studios/PiFace/main/python/PiFace.py
-chmod +x PiFace.py
 python3 PiFace.py

@@ -4,11 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54975154-04fc-4c56-b6f8-b4a66b69dd9a" name="Changes" comment="added ssh acces to py&#10;commandArray / PiFace.py WIP">
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/utils.java" afterDir="false" />
+    <list default="true" id="54975154-04fc-4c56-b6f8-b4a66b69dd9a" name="Changes" comment="made the commandArray working&#10;and added utils.convertURLToList for it">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_55.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__j_error_unknown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_23_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PiFace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PiFace.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sshd_sshd_common_2_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sshd_sshd_core_2_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/commandArray" beforeDir="false" afterPath="$PROJECT_DIR$/python/commandArray" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/ClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/ClientManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/PiFace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/PiFace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +72,10 @@
 }</component>
   <component name="RunManager">
     <configuration name="PiFace" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-18" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="homeworkstudios.rebix.PiFace" />
+      <module name="PiFace" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="homeworkstudios.rebix.*" />
@@ -97,7 +108,7 @@
       <workItem from="1659307473863" duration="64000" />
       <workItem from="1659464981445" duration="2690000" />
       <workItem from="1659468634304" duration="2000" />
-      <workItem from="1659468758149" duration="56000" />
+      <workItem from="1659468758149" duration="1247000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1656106603012</created>
@@ -120,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659468312685</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="made the commandArray working&#10;and added utils.convertURLToList for it">
+      <created>1659468875476</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659468875476</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +160,7 @@
     <MESSAGE value="added Graph how the system is going to work" />
     <MESSAGE value="added test python file" />
     <MESSAGE value="added ssh acces to py&#10;commandArray / PiFace.py WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ssh acces to py&#10;commandArray / PiFace.py WIP" />
+    <MESSAGE value="made the commandArray working&#10;and added utils.convertURLToList for it" />
+    <option name="LAST_COMMIT_MESSAGE" value="made the commandArray working&#10;and added utils.convertURLToList for it" />
   </component>
 </project>
