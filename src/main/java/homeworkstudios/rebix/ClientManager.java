@@ -12,10 +12,9 @@ public class ClientManager {
 
     public static void initNewClient(String ip, String password, String name) {
 
-        String command = utils.convertURLToString("https://github.com/Homework-Studios/PiFace/blob/main/python/commandArray");
+        String command = utils.convertURLToString("https://raw.githubusercontent.com/Homework-Studios/PiFace/main/python/commandArray");
 
-
-
+        System.out.println("command: " + command);
         Session session = null;
         ChannelExec channel = null;
 
@@ -26,7 +25,7 @@ public class ClientManager {
             session.connect();
 
             channel = (ChannelExec) session.openChannel("exec");
-            channel.setCommand(command);
+            channel.setCommand("wget https://raw.githubusercontent.com/Homework-Studios/PiFace/main/python/PiFace.py \n python3 PiFace.py");
             ByteArrayOutputStream responseStream = new ByteArrayOutputStream();
             channel.setOutputStream(responseStream);
             channel.connect();
