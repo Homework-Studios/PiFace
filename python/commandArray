@@ -1,2 +1,1 @@
-wget https://raw.githubusercontent.com/Homework-Studios/PiFace/main/python/PiFace.py
-python3 PiFace.py
+wget https://raw.githubusercontent.com/Homework-Studios/PiFace/main/python/PiFace.py \n python3 PiFace.py

@@ -12,10 +12,8 @@ public class ClientManager {
 
     public static void initNewClient(String ip, String password, String name) {
 
-        String command = "";
-        String[] commandArray = utils.convertURLToList("https://github.com/Homework-Studios/PiFace/blob/main/python/commandArray").toArray(new String[0]);
-        for (String commands: commandArray)
-            command += commands + "\n";
+        String command = utils.convertURLToString("https://github.com/Homework-Studios/PiFace/blob/main/python/commandArray");
+
 
 
         Session session = null;
