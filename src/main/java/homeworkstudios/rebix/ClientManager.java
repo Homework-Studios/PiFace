@@ -25,7 +25,7 @@ public class ClientManager {
             session.connect();
 
             channel = (ChannelExec) session.openChannel("exec");
-            channel.setCommand("wget https://raw.githubusercontent.com/Homework-Studios/PiFace/main/python/PiFace.py \n python3 PiFace.py");
+            channel.setCommand("rm PiFace.py \n wget https://raw.githubusercontent.com/Homework-Studios/PiFace/main/python/PiFace.py \n python3 PiFace.py");
             ByteArrayOutputStream responseStream = new ByteArrayOutputStream();
             channel.setOutputStream(responseStream);
             channel.connect();

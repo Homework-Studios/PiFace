@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54975154-04fc-4c56-b6f8-b4a66b69dd9a" name="Changes" comment="remade ssh">
+    <list default="true" id="54975154-04fc-4c56-b6f8-b4a66b69dd9a" name="Changes" comment="litle error where the command variabele not works">
+      <change beforePath="$PROJECT_DIR$/.idea/PiFace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PiFace.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__j_error_unknown.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/PiFace.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/PiFace.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/ClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/ClientManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/homeworkstudios/rebix/ClientManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/homeworkstudios/rebix/ClientManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/homeworkstudios/rebix/utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/homeworkstudios/rebix/utils.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +99,8 @@
       <workItem from="1659307473863" duration="64000" />
       <workItem from="1659464981445" duration="2690000" />
       <workItem from="1659468634304" duration="2000" />
-      <workItem from="1659468758149" duration="1532000" />
+      <workItem from="1659468758149" duration="1632000" />
+      <workItem from="1659536069123" duration="300000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1656106603012</created>
@@ -142,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659470205448</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="litle error where the command variabele not works">
+      <created>1659470384236</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659470384236</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +175,7 @@
     <MESSAGE value="added ssh acces to py&#10;commandArray / PiFace.py WIP" />
     <MESSAGE value="made the commandArray working&#10;and added utils.convertURLToList for it" />
     <MESSAGE value="remade ssh" />
-    <option name="LAST_COMMIT_MESSAGE" value="remade ssh" />
+    <MESSAGE value="litle error where the command variabele not works" />
+    <option name="LAST_COMMIT_MESSAGE" value="litle error where the command variabele not works" />
   </component>
 </project>
