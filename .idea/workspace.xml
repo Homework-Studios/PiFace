@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54975154-04fc-4c56-b6f8-b4a66b69dd9a" name="Changes" comment="litle error where the command variabele not works">
-      <change beforePath="$PROJECT_DIR$/.idea/PiFace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PiFace.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__j_error_unknown.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/PiFace.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/PiFace.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/ClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/ClientManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/PiFace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/PiFace.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +99,8 @@
       <workItem from="1659468634304" duration="2000" />
       <workItem from="1659468758149" duration="1632000" />
       <workItem from="1659536069123" duration="300000" />
+      <workItem from="1659558804088" duration="120000" />
+      <workItem from="1659558961774" duration="1477000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1656106603012</created>

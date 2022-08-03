@@ -1,12 +1,12 @@
 package homeworkstudios.rebix;
 
 
-import com.jcraft.jsch.ChannelExec;
-import com.jcraft.jsch.JSch;
-import com.jcraft.jsch.JSchException;
-import com.jcraft.jsch.Session;
+import com.jcraft.jsch.*;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class ClientManager {
 
@@ -24,6 +24,10 @@ public class ClientManager {
             session.setConfig("StrictHostKeyChecking", "no");
             session.connect();
 
+            Channel sftpChannel = session.openChannel("sftp");
+            sftpChannel.connect();
+            ChannelSftp sftp = (ChannelSftp) sftpChannel;
+            sftp.put(PiFace.CLIENT_INFORMATION_STRING + "\n" + PiFace.AUTHENTFICATION_KEY, "/home/pi");
             channel = (ChannelExec) session.openChannel("exec");
             channel.setCommand("rm PiFace.py \n wget https://raw.githubusercontent.com/Homework-Studios/PiFace/main/python/PiFace.py \n python3 PiFace.py");
             ByteArrayOutputStream responseStream = new ByteArrayOutputStream();
@@ -38,6 +42,8 @@ public class ClientManager {
             System.out.println(responseString);
         } catch (JSchException | InterruptedException e) {
             throw new RuntimeException(e);
+        } catch (SftpException e) {
+            throw new RuntimeException(e);
         } finally {
             if (session != null) {
                 session.disconnect();
@@ -47,4 +53,5 @@ public class ClientManager {
             }
         }
     }
+
 }
