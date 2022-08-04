@@ -27,7 +27,7 @@ public class ClientManager {
             Channel sftpChannel = session.openChannel("sftp");
             sftpChannel.connect();
             ChannelSftp sftp = (ChannelSftp) sftpChannel;
-            sftp.put(PiFace.CLIENT_INFORMATION_STRING + "\n" + PiFace.AUTHENTFICATION_KEY, "/home/pi/information.txt");
+            sftp.put(PiFace.CLIENT_INFORMATION_STRING + "%%%%%" + PiFace.AUTHENTFICATION_KEY, "/home/pi/information.txt");
             channel = (ChannelExec) session.openChannel("exec");
             channel.setCommand("rm PiFace.py \n wget https://raw.githubusercontent.com/Homework-Studios/PiFace/main/python/PiFace.py \n python3 PiFace.py");
             ByteArrayOutputStream responseStream = new ByteArrayOutputStream();
