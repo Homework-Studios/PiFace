@@ -7,10 +7,12 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.HashMap;
 
 public class ClientManager {
 
-    public static void initNewClient(String ip, String password, String name) {
+    public static HashMap<String, Client> clients = new HashMap<>();
+    public static void initNewClient(String ip, String password, String name, String clientName) {
 
         String command = utils.convertURLToString("https://raw.githubusercontent.com/Homework-Studios/PiFace/main/python/commandArray");
 
@@ -27,7 +29,7 @@ public class ClientManager {
             Channel sftpChannel = session.openChannel("sftp");
             sftpChannel.connect();
             ChannelSftp sftp = (ChannelSftp) sftpChannel;
-            sftp.put(PiFace.CLIENT_INFORMATION_STRING + "%%%%%" + PiFace.AUTHENTFICATION_KEY, "/home/pi/information.txt");
+            sftp.put(PiFace.host + "%%%%%" + PiFace.port + "%%%%%" + PiFace.AUTHENTFICATION_KEY, "/home/pi/information.txt" + "%%%%%" + clientName);
             channel = (ChannelExec) session.openChannel("exec");
             channel.setCommand("rm PiFace.py \n wget https://raw.githubusercontent.com/Homework-Studios/PiFace/main/python/PiFace.py \n python3 PiFace.py");
             ByteArrayOutputStream responseStream = new ByteArrayOutputStream();
