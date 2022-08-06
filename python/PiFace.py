@@ -40,7 +40,7 @@ time.sleep(1)
 send_data(authentication)
 
 
-def recieve_data():
+async def recieve_data():
     while True:
         data = s.recv(1024)
         print("Data recieved: " + data)
