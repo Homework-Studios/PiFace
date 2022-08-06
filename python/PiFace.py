@@ -40,14 +40,15 @@ send_data(authentication)
 
 
 def recieve_data():
-    data = s.recvfrom(1024).decode("utf-8")
+    data = s.recv(1024).decode("utf-8")
     print("Data recieved: " + data)
     return data
 
 
 time.sleep(0.25)
 print("now recieving data and waiting for connection approval")
-if recieve_data() == "ConnectionApproved":
-    print("Connection Approved")
+if recieve_data() == "connecting":
+    if recieve_data() == "ConnectionApproved":
+        print("Connection Approved")
 
-print("PiFace Started")
+    print("PiFace Started")
