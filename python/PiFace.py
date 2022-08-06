@@ -13,7 +13,7 @@ def load_string_from_file(filepath):
         return val
 
 
-information = load_string_from_file("C:/Users/timon/Desktop/Coding_files/PiFace/python/information.txt").split("%%%%%")
+information = load_string_from_file("home/pi/information.txt").split("%%%%%")
 
 ip = information[0].split(":")[0]
 port = information[0].split(":")[1]
