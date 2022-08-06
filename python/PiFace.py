@@ -1,8 +1,4 @@
 import threading
-
-import numpy as np
-import pandas as pd
-import pickle
 import socket
 
 # import RPi.GPIO as GPIO
