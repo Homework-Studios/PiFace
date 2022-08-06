@@ -3,10 +3,11 @@ package homeworkstudios.rebix;
 import java.io.*;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
-import java.util.Base64;
+import java.util.Objects;
 
 public class Client {
 
+    public static boolean Authenticated = false;
     Socket socket;
     public Client(Socket socket) {
         this.socket = socket;
@@ -29,6 +30,19 @@ public class Client {
     public void onMessageRecieved(String m) {
         String message = new String(m.getBytes(), StandardCharsets.UTF_8);
         System.out.println("Message Recieved: " + message);
+        if (!Authenticated) {
+            if (Objects.equals(message.split("%%%%%")[0], PiFace.AUTHENTFICATION_KEY)) {
+                Authenticated = true;
+                ClientManager.addClient(message.split("%%%%%")[1], this);
+            }
+            else {
+                try {
+                    socket.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }
     }
 
     public void sendMessage(String message) {

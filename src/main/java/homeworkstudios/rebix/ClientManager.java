@@ -56,4 +56,10 @@ public class ClientManager {
         }
     }
 
+
+    public static void addClient(String clientName, Client client) {
+        clients.put(clientName, client);
+        client.sendMessage("ConnectionApproved");
+        System.out.println("Client added: " + clientName);
+    }
 }

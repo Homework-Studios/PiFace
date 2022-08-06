@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54975154-04fc-4c56-b6f8-b4a66b69dd9a" name="Changes" comment="made the client connect to the not existing server&#10;added a recieve loop&#10;made the client send a utf-8 encoded key to the server">
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PiFace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PiFace.iml" afterDir="false" />
+    <list default="true" id="54975154-04fc-4c56-b6f8-b4a66b69dd9a" name="Changes" comment="added message encryption&#10;added server stuff&#10;made the client try to authentifiacate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/PiFace.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/PiFace.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/ClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/ClientManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/PiFace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworkstudios/rebix/PiFace.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +108,7 @@
       <workItem from="1659645841536" duration="389000" />
       <workItem from="1659650393418" duration="2695000" />
       <workItem from="1659705770511" duration="527000" />
-      <workItem from="1659711427600" duration="2428000" />
+      <workItem from="1659711427600" duration="3424000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1656106603012</created>
@@ -184,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659653035790</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added message encryption&#10;added server stuff&#10;made the client try to authentifiacate">
+      <created>1659743912975</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1659743912975</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +215,7 @@
     <MESSAGE value="added the way to send authentification key and server ip&#10;next the values will be used to create a server and connect to it using the python program insalled on the raspbery Pi to controll the GPIO ports" />
     <MESSAGE value="made it possible to read the dada in the python script" />
     <MESSAGE value="made the client connect to the not existing server&#10;added a recieve loop&#10;made the client send a utf-8 encoded key to the server" />
-    <option name="LAST_COMMIT_MESSAGE" value="made the client connect to the not existing server&#10;added a recieve loop&#10;made the client send a utf-8 encoded key to the server" />
+    <MESSAGE value="added message encryption&#10;added server stuff&#10;made the client try to authentifiacate" />
+    <option name="LAST_COMMIT_MESSAGE" value="added message encryption&#10;added server stuff&#10;made the client try to authentifiacate" />
   </component>
 </project>
