@@ -36,31 +36,18 @@ def send_data(data):
     s.send(data.encode("utf-8"))
 
 
-time.sleep(1)
 send_data(authentication)
 
 
-async def recieve_data():
-    while True:
-        data = s.recv(1024)
-        print("Data recieved: " + data)
-        if data.decode("utf-8") == "ConnectionApproved":
-            global ConnectionApproved
-            ConnectionApproved = True
-            print("Connection Approved")
+def recieve_data():
+    data = s.recvfrom(1024).decode("utf-8")
+    print("Data recieved: " + data)
+    return data
 
 
-loop = asyncio.new_event_loop()
-asyncio.set_event_loop(loop)
-loop.create_task(recieve_data())
-loop.run_forever()
-
-asyncio.run(recieve_data())
-
+time.sleep(0.25)
 print("now recieving data and waiting for connection approval")
-
-global ConnectionApproved
-if ConnectionApproved:
+if recieve_data() == "ConnectionApproved":
     print("Connection Approved")
 
 print("PiFace Started")
